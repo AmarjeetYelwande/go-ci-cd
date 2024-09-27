@@ -1,9 +1,13 @@
 name: Print Hello World
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - master
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   Hello:
